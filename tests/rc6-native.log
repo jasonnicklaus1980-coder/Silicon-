@@ -1,0 +1,861 @@
+Building SILICON by Shannon Instruments  (/tmp/sil6/SILICON)
+  toolchain: gcc   target: native   release
+
+[1/2] Native build (for host_sim and testing on this computer)
+  [native] compiling 10 source files -> build/native/silicon.so
+In file included from /tmp/sil6/SILICON/src/ymfm_opm.h:36,
+                 from /tmp/sil6/SILICON/src/Silicon.cpp:2:
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_timer(uint32_t, int32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:527:46: warning: unused parameter ‘tnum’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                     ~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:527:60: warning: unused parameter ‘duration_in_clocks’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                                    ~~~~~~~~^~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_busy_end(uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:533:49: warning: unused parameter ‘clocks’ [-Wunused-parameter]
+  533 |         virtual void ymfm_set_busy_end(uint32_t clocks) { }
+      |                                        ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_update_irq(bool)’:
+/tmp/sil6/SILICON/src/ymfm.h:548:43: warning: unused parameter ‘asserted’ [-Wunused-parameter]
+  548 |         virtual void ymfm_update_irq(bool asserted) { }
+      |                                      ~~~~~^~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual uint8_t ymfm::ymfm_interface::ymfm_external_read(ymfm::access_class, uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:552:57: warning: unused parameter ‘type’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                            ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:552:72: warning: unused parameter ‘address’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                                               ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_external_write(ymfm::access_class, uint32_t, uint8_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:556:55: warning: unused parameter ‘type’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                          ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:70: warning: unused parameter ‘address’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                             ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:87: warning: unused parameter ‘data’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                                               ~~~~~~~~^~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opm.h:37:
+/tmp/sil6/SILICON/src/ymfm_fm.h: In member function ‘uint32_t ymfm::fm_registers_base::op_ssg_eg_enable(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:132:44: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  132 |         uint32_t op_ssg_eg_enable(uint32_t opoffs) const { return 0; } // OPN(A) only
+      |                                   ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.h: In member function ‘uint32_t ymfm::fm_registers_base::op_ssg_eg_mode(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:133:42: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  133 |         uint32_t op_ssg_eg_mode(uint32_t opoffs) const   { return 0; } // OPN(A) only
+      |                                 ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opm.h: In member function ‘uint32_t ymfm::opm_registers::ch_output_2(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opm.h:198:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  198 |         uint32_t ch_output_2(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opm.h: In member function ‘uint32_t ymfm::opm_registers::ch_output_3(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opm.h:199:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  199 |         uint32_t ch_output_3(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+In file included from /tmp/sil6/SILICON/src/Silicon.cpp:4:
+/tmp/sil6/SILICON/src/ymfm_opl.h: In member function ‘uint32_t ymfm::opll_registers::lfo_am_offset(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opl.h:393:41: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  393 |         uint32_t lfo_am_offset(uint32_t choffs) const { return m_lfo_am; }
+      |                                ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h: In member function ‘uint32_t ymfm::opll_registers::ch_algorithm(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opl.h:435:40: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  435 |         uint32_t ch_algorithm(uint32_t choffs) const     { return 0; }
+      |                               ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h: In member function ‘uint32_t ymfm::opll_registers::ch_output_any(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opl.h:437:41: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  437 |         uint32_t ch_output_any(uint32_t choffs) const    { return 1; }
+      |                                ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h: In member function ‘uint32_t ymfm::opll_registers::ch_output_2(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opl.h:440:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  440 |         uint32_t ch_output_2(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h: In member function ‘uint32_t ymfm::opll_registers::ch_output_3(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opl.h:441:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  441 |         uint32_t ch_output_3(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h: In member function ‘uint8_t ymfm::opll_base::read(uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm_opl.h:828:31: warning: unused parameter ‘offset’ [-Wunused-parameter]
+  828 |         uint8_t read(uint32_t offset) { return 0x00; }
+      |                      ~~~~~~~~~^~~~~~
+In file included from /tmp/sil6/SILICON/src/Silicon.cpp:1:
+/tmp/sil6/sdk/framework/mpc_plugin.h: In function ‘VstIntPtr mpc::detail::dispatcher(AEffect*, VstInt32, VstInt32, VstIntPtr, void*, float)’:
+/tmp/sil6/sdk/framework/mpc_plugin.h:734:72: warning: ‘%d’ directive output may be truncated writing between 1 and 10 bytes into a region of size between 5 and 6 [-Wformat-truncation=]
+  734 |             std::snprintf(pin->shortLabel, sizeof(pin->shortLabel), "%s%d", opcode == effGetInputProperties ? "In" : "Out", index + 1);
+      |                                                                        ^~
+/tmp/sil6/sdk/framework/mpc_plugin.h:734:69: note: directive argument in the range [1, 2147483647]
+  734 |             std::snprintf(pin->shortLabel, sizeof(pin->shortLabel), "%s%d", opcode == effGetInputProperties ? "In" : "Out", index + 1);
+      |                                                                     ^~~~~~
+/tmp/sil6/sdk/framework/mpc_plugin.h:734:26: note: ‘snprintf’ output between 4 and 14 bytes into a destination of size 8
+  734 |             std::snprintf(pin->shortLabel, sizeof(pin->shortLabel), "%s%d", opcode == effGetInputProperties ? "In" : "Out", index + 1);
+      |             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_adpcm.h:36,
+                 from /tmp/sil6/SILICON/src/ymfm_adpcm.cpp:31:
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_timer(uint32_t, int32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:527:46: warning: unused parameter ‘tnum’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                     ~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:527:60: warning: unused parameter ‘duration_in_clocks’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                                    ~~~~~~~~^~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_busy_end(uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:533:49: warning: unused parameter ‘clocks’ [-Wunused-parameter]
+  533 |         virtual void ymfm_set_busy_end(uint32_t clocks) { }
+      |                                        ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_update_irq(bool)’:
+/tmp/sil6/SILICON/src/ymfm.h:548:43: warning: unused parameter ‘asserted’ [-Wunused-parameter]
+  548 |         virtual void ymfm_update_irq(bool asserted) { }
+      |                                      ~~~~~^~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual uint8_t ymfm::ymfm_interface::ymfm_external_read(ymfm::access_class, uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:552:57: warning: unused parameter ‘type’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                            ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:552:72: warning: unused parameter ‘address’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                                               ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_external_write(ymfm::access_class, uint32_t, uint8_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:556:55: warning: unused parameter ‘type’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                          ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:70: warning: unused parameter ‘address’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                             ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:87: warning: unused parameter ‘data’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                                               ~~~~~~~~^~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_misc.h:36,
+                 from /tmp/sil6/SILICON/src/ymfm_misc.cpp:31:
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_timer(uint32_t, int32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:527:46: warning: unused parameter ‘tnum’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                     ~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:527:60: warning: unused parameter ‘duration_in_clocks’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                                    ~~~~~~~~^~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_busy_end(uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:533:49: warning: unused parameter ‘clocks’ [-Wunused-parameter]
+  533 |         virtual void ymfm_set_busy_end(uint32_t clocks) { }
+      |                                        ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_update_irq(bool)’:
+/tmp/sil6/SILICON/src/ymfm.h:548:43: warning: unused parameter ‘asserted’ [-Wunused-parameter]
+  548 |         virtual void ymfm_update_irq(bool asserted) { }
+      |                                      ~~~~~^~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual uint8_t ymfm::ymfm_interface::ymfm_external_read(ymfm::access_class, uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:552:57: warning: unused parameter ‘type’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                            ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:552:72: warning: unused parameter ‘address’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                                               ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_external_write(ymfm::access_class, uint32_t, uint8_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:556:55: warning: unused parameter ‘type’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                          ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:70: warning: unused parameter ‘address’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                             ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:87: warning: unused parameter ‘data’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                                               ~~~~~~~~^~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opl.h:36,
+                 from /tmp/sil6/SILICON/src/ymfm_opl.cpp:31:
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_timer(uint32_t, int32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:527:46: warning: unused parameter ‘tnum’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                     ~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:527:60: warning: unused parameter ‘duration_in_clocks’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                                    ~~~~~~~~^~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_busy_end(uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:533:49: warning: unused parameter ‘clocks’ [-Wunused-parameter]
+  533 |         virtual void ymfm_set_busy_end(uint32_t clocks) { }
+      |                                        ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_update_irq(bool)’:
+/tmp/sil6/SILICON/src/ymfm.h:548:43: warning: unused parameter ‘asserted’ [-Wunused-parameter]
+  548 |         virtual void ymfm_update_irq(bool asserted) { }
+      |                                      ~~~~~^~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual uint8_t ymfm::ymfm_interface::ymfm_external_read(ymfm::access_class, uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:552:57: warning: unused parameter ‘type’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                            ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:552:72: warning: unused parameter ‘address’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                                               ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_external_write(ymfm::access_class, uint32_t, uint8_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:556:55: warning: unused parameter ‘type’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                          ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:70: warning: unused parameter ‘address’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                             ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:87: warning: unused parameter ‘data’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                                               ~~~~~~~~^~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opl.h:38:
+/tmp/sil6/SILICON/src/ymfm_fm.h: In member function ‘uint32_t ymfm::fm_registers_base::op_ssg_eg_enable(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:132:44: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  132 |         uint32_t op_ssg_eg_enable(uint32_t opoffs) const { return 0; } // OPN(A) only
+      |                                   ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.h: In member function ‘uint32_t ymfm::fm_registers_base::op_ssg_eg_mode(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:133:42: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  133 |         uint32_t op_ssg_eg_mode(uint32_t opoffs) const   { return 0; } // OPN(A) only
+      |                                 ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h: In member function ‘uint32_t ymfm::opll_registers::lfo_am_offset(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opl.h:393:41: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  393 |         uint32_t lfo_am_offset(uint32_t choffs) const { return m_lfo_am; }
+      |                                ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h: In member function ‘uint32_t ymfm::opll_registers::ch_algorithm(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opl.h:435:40: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  435 |         uint32_t ch_algorithm(uint32_t choffs) const     { return 0; }
+      |                               ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h: In member function ‘uint32_t ymfm::opll_registers::ch_output_any(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opl.h:437:41: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  437 |         uint32_t ch_output_any(uint32_t choffs) const    { return 1; }
+      |                                ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h: In member function ‘uint32_t ymfm::opll_registers::ch_output_2(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opl.h:440:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  440 |         uint32_t ch_output_2(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h: In member function ‘uint32_t ymfm::opll_registers::ch_output_3(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opl.h:441:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  441 |         uint32_t ch_output_3(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h: In member function ‘uint8_t ymfm::opll_base::read(uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm_opl.h:828:31: warning: unused parameter ‘offset’ [-Wunused-parameter]
+  828 |         uint8_t read(uint32_t offset) { return 0x00; }
+      |                      ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp: In member function ‘uint32_t ymfm::opll_registers::compute_phase_step(uint32_t, uint32_t, const ymfm::opdata_cache&, int32_t)’:
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:670:54: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  670 | uint32_t opll_registers::compute_phase_step(uint32_t choffs, uint32_t opoffs, opdata_cache const &cache, int32_t lfo_raw_pm)
+      |                                             ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h: In instantiation of ‘uint32_t ymfm::opl_registers_base<Revision>::lfo_am_offset(uint32_t) const [with int Revision = 4; uint32_t = unsigned int]’:
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:2217:16:   required from here
+ 2217 | template class opl_registers_base<4>;
+      |                ^~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h:187:41: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  187 |         uint32_t lfo_am_offset(uint32_t choffs) const { return m_lfo_am; }
+      |                                ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp: In instantiation of ‘uint32_t ymfm::opl_registers_base<Revision>::compute_phase_step(uint32_t, uint32_t, const ymfm::opdata_cache&, int32_t) [with int Revision = 4; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:2217:16:   required from here
+ 2217 | template class opl_registers_base<4>;
+      |                ^~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:372:68: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  372 | uint32_t opl_registers_base<Revision>::compute_phase_step(uint32_t choffs, uint32_t opoffs, opdata_cache const &cache, int32_t lfo_raw_pm)
+      |                                                           ~~~~~~~~~^~~~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opl.cpp:32:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp: In instantiation of ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opl_registers_base<1>; output_data = ymfm::ymfm_output<1>; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opl_registers_base<1>; output_data = ymfm::ymfm_output<1>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:857:14:   required from here
+  857 |                 m_fm.output(output->clear(), 1, 32767, fm_engine::ALL_CHANNELS);
+      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1085:96: warning: unused parameter ‘clipmax’ [-Wunused-parameter]
+ 1085 | void fm_channel<RegisterType>::output_rhythm_ch6(output_data &output, uint32_t rshift, int32_t clipmax) const
+      |                                                                                        ~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp: In instantiation of ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opl_registers_base<2>; output_data = ymfm::ymfm_output<1>; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opl_registers_base<2>; output_data = ymfm::ymfm_output<1>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:1237:14:   required from here
+ 1237 |                 m_fm.output(output->clear(), 1, 32767, fm_engine::ALL_CHANNELS);
+      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1085:96: warning: unused parameter ‘clipmax’ [-Wunused-parameter]
+ 1085 | void fm_channel<RegisterType>::output_rhythm_ch6(output_data &output, uint32_t rshift, int32_t clipmax) const
+      |                                                                                        ~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp: In instantiation of ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opl_registers_base<3>; output_data = ymfm::ymfm_output<4>; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opl_registers_base<3>; output_data = ymfm::ymfm_output<4>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:1410:14:   required from here
+ 1410 |                 m_fm.output(output->clear(), 0, 32767, fm_engine::ALL_CHANNELS);
+      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1085:96: warning: unused parameter ‘clipmax’ [-Wunused-parameter]
+ 1085 | void fm_channel<RegisterType>::output_rhythm_ch6(output_data &output, uint32_t rshift, int32_t clipmax) const
+      |                                                                                        ~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp: In instantiation of ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opl_registers_base<4>; output_data = ymfm::ymfm_output<4>; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opl_registers_base<4>; output_data = ymfm::ymfm_output<4>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:1914:14:   required from here
+ 1914 |                 m_fm.output(fmout.clear(), 0, 32767, fm_engine::ALL_CHANNELS);
+      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1085:96: warning: unused parameter ‘clipmax’ [-Wunused-parameter]
+ 1085 | void fm_channel<RegisterType>::output_rhythm_ch6(output_data &output, uint32_t rshift, int32_t clipmax) const
+      |                                                                                        ~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp: In instantiation of ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opll_registers; output_data = ymfm::ymfm_output<2>; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opll_registers; output_data = ymfm::ymfm_output<2>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:2045:14:   required from here
+ 2045 |                 m_fm.output(output->clear(), 5, 256, fm_engine::ALL_CHANNELS);
+      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1085:96: warning: unused parameter ‘clipmax’ [-Wunused-parameter]
+ 1085 | void fm_channel<RegisterType>::output_rhythm_ch6(output_data &output, uint32_t rshift, int32_t clipmax) const
+      |                                                                                        ~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h: In instantiation of ‘uint32_t ymfm::opl_registers_base<Revision>::lfo_am_offset(uint32_t) const [with int Revision = 1; uint32_t = unsigned int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1088:43:   required from ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opl_registers_base<1>; output_data = ymfm::ymfm_output<1>; uint32_t = unsigned int; int32_t = int]’
+ 1088 |         uint32_t am_offset = m_regs.lfo_am_offset(m_choffs);
+      |                              ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opl_registers_base<1>; output_data = ymfm::ymfm_output<1>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:857:14:   required from here
+  857 |                 m_fm.output(output->clear(), 1, 32767, fm_engine::ALL_CHANNELS);
+      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h:187:41: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  187 |         uint32_t lfo_am_offset(uint32_t choffs) const { return m_lfo_am; }
+      |                                ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h: In instantiation of ‘uint32_t ymfm::opl_registers_base<Revision>::lfo_am_offset(uint32_t) const [with int Revision = 2; uint32_t = unsigned int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1088:43:   required from ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opl_registers_base<2>; output_data = ymfm::ymfm_output<1>; uint32_t = unsigned int; int32_t = int]’
+ 1088 |         uint32_t am_offset = m_regs.lfo_am_offset(m_choffs);
+      |                              ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opl_registers_base<2>; output_data = ymfm::ymfm_output<1>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:1237:14:   required from here
+ 1237 |                 m_fm.output(output->clear(), 1, 32767, fm_engine::ALL_CHANNELS);
+      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h:187:41: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  187 |         uint32_t lfo_am_offset(uint32_t choffs) const { return m_lfo_am; }
+      |                                ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h: In instantiation of ‘uint32_t ymfm::opl_registers_base<Revision>::lfo_am_offset(uint32_t) const [with int Revision = 3; uint32_t = unsigned int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1088:43:   required from ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opl_registers_base<3>; output_data = ymfm::ymfm_output<4>; uint32_t = unsigned int; int32_t = int]’
+ 1088 |         uint32_t am_offset = m_regs.lfo_am_offset(m_choffs);
+      |                              ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opl_registers_base<3>; output_data = ymfm::ymfm_output<4>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:1410:14:   required from here
+ 1410 |                 m_fm.output(output->clear(), 0, 32767, fm_engine::ALL_CHANNELS);
+      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.h:187:41: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  187 |         uint32_t lfo_am_offset(uint32_t choffs) const { return m_lfo_am; }
+      |                                ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp: In instantiation of ‘uint32_t ymfm::opl_registers_base<Revision>::compute_phase_step(uint32_t, uint32_t, const ymfm::opdata_cache&, int32_t) [with int Revision = 1; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:317:22:   required from ‘void ymfm::opl_registers_base<Revision>::cache_operator_data(uint32_t, uint32_t, ymfm::opdata_cache&) [with int Revision = 1; uint32_t = unsigned int]’
+  317 |                 cache.phase_step = compute_phase_step(choffs, opoffs, cache, 0);
+      |                                    ^~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:430:28:   required from ‘bool ymfm::fm_operator<RegisterType>::prepare() [with RegisterType = ymfm::opl_registers_base<1>]’
+  430 |         m_regs.cache_operator_data(m_choffs, m_opoffs, m_cache);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:865:28:   required from ‘bool ymfm::fm_channel<RegisterType>::prepare() [with RegisterType = ymfm::opl_registers_base<1>]’
+  865 |                         if (m_op[opnum]->prepare())
+      |                             ~~~~~~~~~~~~~~~~~~~~^~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1297:34:   required from ‘uint32_t ymfm::fm_engine_base<RegisterType>::clock(uint32_t) [with RegisterType = ymfm::opl_registers_base<1>; uint32_t = unsigned int]’
+ 1297 |                                 if (m_channel[chnum]->prepare())
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:854:13:   required from here
+  854 |                 m_fm.clock(fm_engine::ALL_CHANNELS);
+      |                 ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:372:68: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  372 | uint32_t opl_registers_base<Revision>::compute_phase_step(uint32_t choffs, uint32_t opoffs, opdata_cache const &cache, int32_t lfo_raw_pm)
+      |                                                           ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp: In instantiation of ‘uint32_t ymfm::opl_registers_base<Revision>::compute_phase_step(uint32_t, uint32_t, const ymfm::opdata_cache&, int32_t) [with int Revision = 2; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:317:22:   required from ‘void ymfm::opl_registers_base<Revision>::cache_operator_data(uint32_t, uint32_t, ymfm::opdata_cache&) [with int Revision = 2; uint32_t = unsigned int]’
+  317 |                 cache.phase_step = compute_phase_step(choffs, opoffs, cache, 0);
+      |                                    ^~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:430:28:   required from ‘bool ymfm::fm_operator<RegisterType>::prepare() [with RegisterType = ymfm::opl_registers_base<2>]’
+  430 |         m_regs.cache_operator_data(m_choffs, m_opoffs, m_cache);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:865:28:   required from ‘bool ymfm::fm_channel<RegisterType>::prepare() [with RegisterType = ymfm::opl_registers_base<2>]’
+  865 |                         if (m_op[opnum]->prepare())
+      |                             ~~~~~~~~~~~~~~~~~~~~^~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1297:34:   required from ‘uint32_t ymfm::fm_engine_base<RegisterType>::clock(uint32_t) [with RegisterType = ymfm::opl_registers_base<2>; uint32_t = unsigned int]’
+ 1297 |                                 if (m_channel[chnum]->prepare())
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:1234:13:   required from here
+ 1234 |                 m_fm.clock(fm_engine::ALL_CHANNELS);
+      |                 ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:372:68: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  372 | uint32_t opl_registers_base<Revision>::compute_phase_step(uint32_t choffs, uint32_t opoffs, opdata_cache const &cache, int32_t lfo_raw_pm)
+      |                                                           ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp: In instantiation of ‘uint32_t ymfm::opl_registers_base<Revision>::compute_phase_step(uint32_t, uint32_t, const ymfm::opdata_cache&, int32_t) [with int Revision = 3; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:317:22:   required from ‘void ymfm::opl_registers_base<Revision>::cache_operator_data(uint32_t, uint32_t, ymfm::opdata_cache&) [with int Revision = 3; uint32_t = unsigned int]’
+  317 |                 cache.phase_step = compute_phase_step(choffs, opoffs, cache, 0);
+      |                                    ^~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:430:28:   required from ‘bool ymfm::fm_operator<RegisterType>::prepare() [with RegisterType = ymfm::opl_registers_base<3>]’
+  430 |         m_regs.cache_operator_data(m_choffs, m_opoffs, m_cache);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:865:28:   required from ‘bool ymfm::fm_channel<RegisterType>::prepare() [with RegisterType = ymfm::opl_registers_base<3>]’
+  865 |                         if (m_op[opnum]->prepare())
+      |                             ~~~~~~~~~~~~~~~~~~~~^~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1297:34:   required from ‘uint32_t ymfm::fm_engine_base<RegisterType>::clock(uint32_t) [with RegisterType = ymfm::opl_registers_base<3>; uint32_t = unsigned int]’
+ 1297 |                                 if (m_channel[chnum]->prepare())
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:1407:13:   required from here
+ 1407 |                 m_fm.clock(fm_engine::ALL_CHANNELS);
+      |                 ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opl.cpp:372:68: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  372 | uint32_t opl_registers_base<Revision>::compute_phase_step(uint32_t choffs, uint32_t opoffs, opdata_cache const &cache, int32_t lfo_raw_pm)
+      |                                                           ~~~~~~~~~^~~~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opm.h:36,
+                 from /tmp/sil6/SILICON/src/ymfm_opm.cpp:31:
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_timer(uint32_t, int32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:527:46: warning: unused parameter ‘tnum’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                     ~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:527:60: warning: unused parameter ‘duration_in_clocks’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                                    ~~~~~~~~^~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_busy_end(uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:533:49: warning: unused parameter ‘clocks’ [-Wunused-parameter]
+  533 |         virtual void ymfm_set_busy_end(uint32_t clocks) { }
+      |                                        ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_update_irq(bool)’:
+/tmp/sil6/SILICON/src/ymfm.h:548:43: warning: unused parameter ‘asserted’ [-Wunused-parameter]
+  548 |         virtual void ymfm_update_irq(bool asserted) { }
+      |                                      ~~~~~^~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual uint8_t ymfm::ymfm_interface::ymfm_external_read(ymfm::access_class, uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:552:57: warning: unused parameter ‘type’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                            ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:552:72: warning: unused parameter ‘address’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                                               ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_external_write(ymfm::access_class, uint32_t, uint8_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:556:55: warning: unused parameter ‘type’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                          ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:70: warning: unused parameter ‘address’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                             ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:87: warning: unused parameter ‘data’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                                               ~~~~~~~~^~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opm.h:37:
+/tmp/sil6/SILICON/src/ymfm_fm.h: In member function ‘uint32_t ymfm::fm_registers_base::op_ssg_eg_enable(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:132:44: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  132 |         uint32_t op_ssg_eg_enable(uint32_t opoffs) const { return 0; } // OPN(A) only
+      |                                   ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.h: In member function ‘uint32_t ymfm::fm_registers_base::op_ssg_eg_mode(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:133:42: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  133 |         uint32_t op_ssg_eg_mode(uint32_t opoffs) const   { return 0; } // OPN(A) only
+      |                                 ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opm.h: In member function ‘uint32_t ymfm::opm_registers::ch_output_2(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opm.h:198:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  198 |         uint32_t ch_output_2(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opm.h: In member function ‘uint32_t ymfm::opm_registers::ch_output_3(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opm.h:199:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  199 |         uint32_t ch_output_3(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opm.cpp:32:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp: In instantiation of ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opm_registers; output_data = ymfm::ymfm_output<2>; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opm_registers; output_data = ymfm::ymfm_output<2>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opm.cpp:531:14:   required from here
+  531 |                 m_fm.output(output->clear(), 0, 32767, fm_engine::ALL_CHANNELS);
+      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1085:96: warning: unused parameter ‘clipmax’ [-Wunused-parameter]
+ 1085 | void fm_channel<RegisterType>::output_rhythm_ch6(output_data &output, uint32_t rshift, int32_t clipmax) const
+      |                                                                                        ~~~~~~~~^~~~~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opn.h:36,
+                 from /tmp/sil6/SILICON/src/ymfm_opn.cpp:31:
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_timer(uint32_t, int32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:527:46: warning: unused parameter ‘tnum’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                     ~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:527:60: warning: unused parameter ‘duration_in_clocks’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                                    ~~~~~~~~^~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_busy_end(uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:533:49: warning: unused parameter ‘clocks’ [-Wunused-parameter]
+  533 |         virtual void ymfm_set_busy_end(uint32_t clocks) { }
+      |                                        ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_update_irq(bool)’:
+/tmp/sil6/SILICON/src/ymfm.h:548:43: warning: unused parameter ‘asserted’ [-Wunused-parameter]
+  548 |         virtual void ymfm_update_irq(bool asserted) { }
+      |                                      ~~~~~^~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual uint8_t ymfm::ymfm_interface::ymfm_external_read(ymfm::access_class, uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:552:57: warning: unused parameter ‘type’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                            ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:552:72: warning: unused parameter ‘address’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                                               ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_external_write(ymfm::access_class, uint32_t, uint8_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:556:55: warning: unused parameter ‘type’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                          ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:70: warning: unused parameter ‘address’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                             ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:87: warning: unused parameter ‘data’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                                               ~~~~~~~~^~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opn.h:38:
+/tmp/sil6/SILICON/src/ymfm_fm.h: In member function ‘uint32_t ymfm::fm_registers_base::op_ssg_eg_enable(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:132:44: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  132 |         uint32_t op_ssg_eg_enable(uint32_t opoffs) const { return 0; } // OPN(A) only
+      |                                   ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.h: In member function ‘uint32_t ymfm::fm_registers_base::op_ssg_eg_mode(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:133:42: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  133 |         uint32_t op_ssg_eg_mode(uint32_t opoffs) const   { return 0; } // OPN(A) only
+      |                                 ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp: In instantiation of ‘void ymfm::ssg_resampler<OutputType, FirstOutput, MixTo1>::resample_nop(OutputType*, uint32_t) [with OutputType = ymfm::ymfm_output<4>; int FirstOutput = 1; bool MixTo1 = false; uint32_t = unsigned int]’:
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:516:14:   required from ‘ymfm::ssg_resampler<OutputType, FirstOutput, MixTo1>::ssg_resampler(ymfm::ssg_engine&) [with OutputType = ymfm::ymfm_output<4>; int FirstOutput = 1; bool MixTo1 = false]’
+  516 |         m_resampler(&ssg_resampler::resample_nop)
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:698:2:   required from here
+  698 |         m_ssg_resampler(m_ssg)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:677:79: warning: unused parameter ‘output’ [-Wunused-parameter]
+  677 | void ssg_resampler<OutputType, FirstOutput, MixTo1>::resample_nop(OutputType *output, uint32_t numsamples)
+      |                                                                   ~~~~~~~~~~~~^~~~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opn.cpp:32:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp: In instantiation of ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opn_registers_base<false>; output_data = ymfm::ymfm_output<1>; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opn_registers_base<false>; output_data = ymfm::ymfm_output<1>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:957:13:   required from here
+  957 |         m_fm.output(m_last_fm.clear(), 0, 32767, fm_engine::ALL_CHANNELS);
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1085:96: warning: unused parameter ‘clipmax’ [-Wunused-parameter]
+ 1085 | void fm_channel<RegisterType>::output_rhythm_ch6(output_data &output, uint32_t rshift, int32_t clipmax) const
+      |                                                                                        ~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp: In instantiation of ‘void ymfm::ssg_resampler<OutputType, FirstOutput, MixTo1>::resample_nop(OutputType*, uint32_t) [with OutputType = ymfm::ymfm_output<3>; int FirstOutput = 2; bool MixTo1 = true; uint32_t = unsigned int]’:
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:516:14:   required from ‘ymfm::ssg_resampler<OutputType, FirstOutput, MixTo1>::ssg_resampler(ymfm::ssg_engine&) [with OutputType = ymfm::ymfm_output<3>; int FirstOutput = 2; bool MixTo1 = true]’
+  516 |         m_resampler(&ssg_resampler::resample_nop)
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:980:2:   required from here
+  980 |         m_ssg_resampler(m_ssg),
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:677:79: warning: unused parameter ‘output’ [-Wunused-parameter]
+  677 | void ssg_resampler<OutputType, FirstOutput, MixTo1>::resample_nop(OutputType *output, uint32_t numsamples)
+      |                                                                   ~~~~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp: In instantiation of ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opn_registers_base<true>; output_data = ymfm::ymfm_output<2>; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opn_registers_base<true>; output_data = ymfm::ymfm_output<2>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:1406:13:   required from here
+ 1406 |         m_fm.output(m_last_fm.clear(), 1, 32767, fmmask);
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1085:96: warning: unused parameter ‘clipmax’ [-Wunused-parameter]
+ 1085 | void fm_channel<RegisterType>::output_rhythm_ch6(output_data &output, uint32_t rshift, int32_t clipmax) const
+      |                                                                                        ~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.h: In instantiation of ‘uint32_t ymfm::opn_registers_base<IsOpnA>::ch_output_2(uint32_t) const [with bool IsOpnA = false; uint32_t = unsigned int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:323:55:   required from ‘void ymfm::fm_channel<RegisterType>::add_to_output(uint32_t, output_data&, int32_t) const [with RegisterType = ymfm::opn_registers_base<false>; uint32_t = unsigned int; output_data = ymfm::ymfm_output<1>; int32_t = int]’
+  323 |                 if (RegisterType::OUTPUTS >= 3 && m_regs.ch_output_2(choffs))
+      |                                                   ~~~~~~~~~~~~~~~~~~^~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1108:2:   required from ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opn_registers_base<false>; output_data = ymfm::ymfm_output<1>; uint32_t = unsigned int; int32_t = int]’
+ 1108 |         add_to_output(m_choffs, output, result * 2);
+      |         ^~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opn_registers_base<false>; output_data = ymfm::ymfm_output<1>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:957:13:   required from here
+  957 |         m_fm.output(m_last_fm.clear(), 0, 32767, fm_engine::ALL_CHANNELS);
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.h:215:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  215 |         uint32_t ch_output_2(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.h: In instantiation of ‘uint32_t ymfm::opn_registers_base<IsOpnA>::ch_output_3(uint32_t) const [with bool IsOpnA = false; uint32_t = unsigned int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:325:55:   required from ‘void ymfm::fm_channel<RegisterType>::add_to_output(uint32_t, output_data&, int32_t) const [with RegisterType = ymfm::opn_registers_base<false>; uint32_t = unsigned int; output_data = ymfm::ymfm_output<1>; int32_t = int]’
+  325 |                 if (RegisterType::OUTPUTS >= 4 && m_regs.ch_output_3(choffs))
+      |                                                   ~~~~~~~~~~~~~~~~~~^~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1108:2:   required from ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opn_registers_base<false>; output_data = ymfm::ymfm_output<1>; uint32_t = unsigned int; int32_t = int]’
+ 1108 |         add_to_output(m_choffs, output, result * 2);
+      |         ^~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opn_registers_base<false>; output_data = ymfm::ymfm_output<1>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:957:13:   required from here
+  957 |         m_fm.output(m_last_fm.clear(), 0, 32767, fm_engine::ALL_CHANNELS);
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.h:216:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  216 |         uint32_t ch_output_3(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.h: In instantiation of ‘uint32_t ymfm::opn_registers_base<IsOpnA>::ch_output_2(uint32_t) const [with bool IsOpnA = true; uint32_t = unsigned int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:323:55:   required from ‘void ymfm::fm_channel<RegisterType>::add_to_output(uint32_t, output_data&, int32_t) const [with RegisterType = ymfm::opn_registers_base<true>; uint32_t = unsigned int; output_data = ymfm::ymfm_output<2>; int32_t = int]’
+  323 |                 if (RegisterType::OUTPUTS >= 3 && m_regs.ch_output_2(choffs))
+      |                                                   ~~~~~~~~~~~~~~~~~~^~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1108:2:   required from ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opn_registers_base<true>; output_data = ymfm::ymfm_output<2>; uint32_t = unsigned int; int32_t = int]’
+ 1108 |         add_to_output(m_choffs, output, result * 2);
+      |         ^~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opn_registers_base<true>; output_data = ymfm::ymfm_output<2>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:1406:13:   required from here
+ 1406 |         m_fm.output(m_last_fm.clear(), 1, 32767, fmmask);
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.h:215:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  215 |         uint32_t ch_output_2(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.h: In instantiation of ‘uint32_t ymfm::opn_registers_base<IsOpnA>::ch_output_3(uint32_t) const [with bool IsOpnA = true; uint32_t = unsigned int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:325:55:   required from ‘void ymfm::fm_channel<RegisterType>::add_to_output(uint32_t, output_data&, int32_t) const [with RegisterType = ymfm::opn_registers_base<true>; uint32_t = unsigned int; output_data = ymfm::ymfm_output<2>; int32_t = int]’
+  325 |                 if (RegisterType::OUTPUTS >= 4 && m_regs.ch_output_3(choffs))
+      |                                                   ~~~~~~~~~~~~~~~~~~^~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1108:2:   required from ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opn_registers_base<true>; output_data = ymfm::ymfm_output<2>; uint32_t = unsigned int; int32_t = int]’
+ 1108 |         add_to_output(m_choffs, output, result * 2);
+      |         ^~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opn_registers_base<true>; output_data = ymfm::ymfm_output<2>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:1406:13:   required from here
+ 1406 |         m_fm.output(m_last_fm.clear(), 1, 32767, fmmask);
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.h:216:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  216 |         uint32_t ch_output_3(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp: In instantiation of ‘uint32_t ymfm::opn_registers_base<IsOpnA>::compute_phase_step(uint32_t, uint32_t, const ymfm::opdata_cache&, int32_t) [with bool IsOpnA = false; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:325:22:   required from ‘void ymfm::opn_registers_base<IsOpnA>::cache_operator_data(uint32_t, uint32_t, ymfm::opdata_cache&) [with bool IsOpnA = false; uint32_t = unsigned int]’
+  325 |                 cache.phase_step = compute_phase_step(choffs, opoffs, cache, 0);
+      |                                    ^~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:430:28:   required from ‘bool ymfm::fm_operator<RegisterType>::prepare() [with RegisterType = ymfm::opn_registers_base<false>]’
+  430 |         m_regs.cache_operator_data(m_choffs, m_opoffs, m_cache);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:865:28:   required from ‘bool ymfm::fm_channel<RegisterType>::prepare() [with RegisterType = ymfm::opn_registers_base<false>]’
+  865 |                         if (m_op[opnum]->prepare())
+      |                             ~~~~~~~~~~~~~~~~~~~~^~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1297:34:   required from ‘uint32_t ymfm::fm_engine_base<RegisterType>::clock(uint32_t) [with RegisterType = ymfm::opn_registers_base<false>; uint32_t = unsigned int]’
+ 1297 |                                 if (m_channel[chnum]->prepare())
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:954:12:   required from here
+  954 |         m_fm.clock(fm_engine::ALL_CHANNELS);
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:351:83: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  351 | uint32_t opn_registers_base<IsOpnA>::compute_phase_step(uint32_t choffs, uint32_t opoffs, opdata_cache const &cache, int32_t lfo_raw_pm)
+      |                                                                          ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp: In instantiation of ‘uint32_t ymfm::opn_registers_base<IsOpnA>::compute_phase_step(uint32_t, uint32_t, const ymfm::opdata_cache&, int32_t) [with bool IsOpnA = true; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:325:22:   required from ‘void ymfm::opn_registers_base<IsOpnA>::cache_operator_data(uint32_t, uint32_t, ymfm::opdata_cache&) [with bool IsOpnA = true; uint32_t = unsigned int]’
+  325 |                 cache.phase_step = compute_phase_step(choffs, opoffs, cache, 0);
+      |                                    ^~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:430:28:   required from ‘bool ymfm::fm_operator<RegisterType>::prepare() [with RegisterType = ymfm::opn_registers_base<true>]’
+  430 |         m_regs.cache_operator_data(m_choffs, m_opoffs, m_cache);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:865:28:   required from ‘bool ymfm::fm_channel<RegisterType>::prepare() [with RegisterType = ymfm::opn_registers_base<true>]’
+  865 |                         if (m_op[opnum]->prepare())
+      |                             ~~~~~~~~~~~~~~~~~~~~^~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1297:34:   required from ‘uint32_t ymfm::fm_engine_base<RegisterType>::clock(uint32_t) [with RegisterType = ymfm::opn_registers_base<true>; uint32_t = unsigned int]’
+ 1297 |                                 if (m_channel[chnum]->prepare())
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:1395:35:   required from here
+ 1395 |         uint32_t env_counter = m_fm.clock(fm_engine::ALL_CHANNELS);
+      |                                ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opn.cpp:351:83: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  351 | uint32_t opn_registers_base<IsOpnA>::compute_phase_step(uint32_t choffs, uint32_t opoffs, opdata_cache const &cache, int32_t lfo_raw_pm)
+      |                                                                          ~~~~~~~~~^~~~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opq.h:36,
+                 from /tmp/sil6/SILICON/src/ymfm_opq.cpp:31:
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_timer(uint32_t, int32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:527:46: warning: unused parameter ‘tnum’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                     ~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:527:60: warning: unused parameter ‘duration_in_clocks’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                                    ~~~~~~~~^~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_busy_end(uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:533:49: warning: unused parameter ‘clocks’ [-Wunused-parameter]
+  533 |         virtual void ymfm_set_busy_end(uint32_t clocks) { }
+      |                                        ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_update_irq(bool)’:
+/tmp/sil6/SILICON/src/ymfm.h:548:43: warning: unused parameter ‘asserted’ [-Wunused-parameter]
+  548 |         virtual void ymfm_update_irq(bool asserted) { }
+      |                                      ~~~~~^~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual uint8_t ymfm::ymfm_interface::ymfm_external_read(ymfm::access_class, uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:552:57: warning: unused parameter ‘type’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                            ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:552:72: warning: unused parameter ‘address’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                                               ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_external_write(ymfm::access_class, uint32_t, uint8_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:556:55: warning: unused parameter ‘type’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                          ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:70: warning: unused parameter ‘address’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                             ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:87: warning: unused parameter ‘data’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                                               ~~~~~~~~^~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opq.h:37:
+/tmp/sil6/SILICON/src/ymfm_fm.h: In member function ‘uint32_t ymfm::fm_registers_base::op_ssg_eg_enable(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:132:44: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  132 |         uint32_t op_ssg_eg_enable(uint32_t opoffs) const { return 0; } // OPN(A) only
+      |                                   ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.h: In member function ‘uint32_t ymfm::fm_registers_base::op_ssg_eg_mode(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:133:42: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  133 |         uint32_t op_ssg_eg_mode(uint32_t opoffs) const   { return 0; } // OPN(A) only
+      |                                 ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opq.h: In member function ‘uint32_t ymfm::opq_registers::ch_output_2(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opq.h:191:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  191 |         uint32_t ch_output_2(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opq.h: In member function ‘uint32_t ymfm::opq_registers::ch_output_3(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opq.h:192:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  192 |         uint32_t ch_output_3(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opq.h: In member function ‘void ymfm::ym3806::write_address(uint8_t)’:
+/tmp/sil6/SILICON/src/ymfm_opq.h:267:36: warning: unused parameter ‘data’ [-Wunused-parameter]
+  267 |         void write_address(uint8_t data) { /* not supported; only direct writes */ }
+      |                            ~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm_opq.h: In member function ‘void ymfm::ym3806::write_data(uint8_t)’:
+/tmp/sil6/SILICON/src/ymfm_opq.h:268:33: warning: unused parameter ‘data’ [-Wunused-parameter]
+  268 |         void write_data(uint8_t data) { /* not supported; only direct writes */ }
+      |                         ~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm_opq.cpp: In member function ‘uint32_t ymfm::opq_registers::compute_phase_step(uint32_t, uint32_t, const ymfm::opdata_cache&, int32_t)’:
+/tmp/sil6/SILICON/src/ymfm_opq.cpp:296:70: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  296 | uint32_t opq_registers::compute_phase_step(uint32_t choffs, uint32_t opoffs, opdata_cache const &cache, int32_t lfo_raw_pm)
+      |                                                             ~~~~~~~~~^~~~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opq.cpp:32:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp: In instantiation of ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opq_registers; output_data = ymfm::ymfm_output<2>; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opq_registers; output_data = ymfm::ymfm_output<2>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opq.cpp:472:14:   required from here
+  472 |                 m_fm.output(output->clear(), 0, 32767, fm_engine::ALL_CHANNELS);
+      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1085:96: warning: unused parameter ‘clipmax’ [-Wunused-parameter]
+ 1085 | void fm_channel<RegisterType>::output_rhythm_ch6(output_data &output, uint32_t rshift, int32_t clipmax) const
+      |                                                                                        ~~~~~~~~^~~~~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opz.h:36,
+                 from /tmp/sil6/SILICON/src/ymfm_opz.cpp:31:
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_timer(uint32_t, int32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:527:46: warning: unused parameter ‘tnum’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                     ~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:527:60: warning: unused parameter ‘duration_in_clocks’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                                    ~~~~~~~~^~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_busy_end(uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:533:49: warning: unused parameter ‘clocks’ [-Wunused-parameter]
+  533 |         virtual void ymfm_set_busy_end(uint32_t clocks) { }
+      |                                        ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_update_irq(bool)’:
+/tmp/sil6/SILICON/src/ymfm.h:548:43: warning: unused parameter ‘asserted’ [-Wunused-parameter]
+  548 |         virtual void ymfm_update_irq(bool asserted) { }
+      |                                      ~~~~~^~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual uint8_t ymfm::ymfm_interface::ymfm_external_read(ymfm::access_class, uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:552:57: warning: unused parameter ‘type’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                            ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:552:72: warning: unused parameter ‘address’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                                               ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_external_write(ymfm::access_class, uint32_t, uint8_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:556:55: warning: unused parameter ‘type’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                          ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:70: warning: unused parameter ‘address’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                             ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:87: warning: unused parameter ‘data’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                                               ~~~~~~~~^~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opz.h:37:
+/tmp/sil6/SILICON/src/ymfm_fm.h: In member function ‘uint32_t ymfm::fm_registers_base::op_ssg_eg_enable(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:132:44: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  132 |         uint32_t op_ssg_eg_enable(uint32_t opoffs) const { return 0; } // OPN(A) only
+      |                                   ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.h: In member function ‘uint32_t ymfm::fm_registers_base::op_ssg_eg_mode(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:133:42: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  133 |         uint32_t op_ssg_eg_mode(uint32_t opoffs) const   { return 0; } // OPN(A) only
+      |                                 ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opz.h: In member function ‘uint32_t ymfm::opz_registers::ch_output_2(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opz.h:226:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  226 |         uint32_t ch_output_2(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_opz.h: In member function ‘uint32_t ymfm::opz_registers::ch_output_3(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_opz.h:227:39: warning: unused parameter ‘choffs’ [-Wunused-parameter]
+  227 |         uint32_t ch_output_3(uint32_t choffs) const      { return 0; }
+      |                              ~~~~~~~~~^~~~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_opz.cpp:32:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp: In instantiation of ‘void ymfm::fm_channel<RegisterType>::output_rhythm_ch6(output_data&, uint32_t, int32_t) const [with RegisterType = ymfm::opz_registers; output_data = ymfm::ymfm_output<2>; uint32_t = unsigned int; int32_t = int]’:
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1359:41:   required from ‘void ymfm::fm_engine_base<RegisterType>::output(output_data&, uint32_t, int32_t, uint32_t) const [with RegisterType = ymfm::opz_registers; output_data = ymfm::ymfm_output<2>; uint32_t = unsigned int; int32_t = int]’
+ 1359 |                                         m_channel[chnum]->output_rhythm_ch6(output, rshift, clipmax);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_opz.cpp:803:14:   required from here
+  803 |                 m_fm.output(output->clear(), 0, 32767, fm_engine::ALL_CHANNELS);
+      |                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.ipp:1085:96: warning: unused parameter ‘clipmax’ [-Wunused-parameter]
+ 1085 | void fm_channel<RegisterType>::output_rhythm_ch6(output_data &output, uint32_t rshift, int32_t clipmax) const
+      |                                                                                        ~~~~~~~~^~~~~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_pcm.h:36,
+                 from /tmp/sil6/SILICON/src/ymfm_pcm.cpp:31:
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_timer(uint32_t, int32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:527:46: warning: unused parameter ‘tnum’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                     ~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:527:60: warning: unused parameter ‘duration_in_clocks’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                                    ~~~~~~~~^~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_busy_end(uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:533:49: warning: unused parameter ‘clocks’ [-Wunused-parameter]
+  533 |         virtual void ymfm_set_busy_end(uint32_t clocks) { }
+      |                                        ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_update_irq(bool)’:
+/tmp/sil6/SILICON/src/ymfm.h:548:43: warning: unused parameter ‘asserted’ [-Wunused-parameter]
+  548 |         virtual void ymfm_update_irq(bool asserted) { }
+      |                                      ~~~~~^~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual uint8_t ymfm::ymfm_interface::ymfm_external_read(ymfm::access_class, uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:552:57: warning: unused parameter ‘type’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                            ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:552:72: warning: unused parameter ‘address’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                                               ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_external_write(ymfm::access_class, uint32_t, uint8_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:556:55: warning: unused parameter ‘type’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                          ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:70: warning: unused parameter ‘address’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                             ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:87: warning: unused parameter ‘data’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                                               ~~~~~~~~^~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_pcm.cpp:32:
+/tmp/sil6/SILICON/src/ymfm_fm.h: In member function ‘uint32_t ymfm::fm_registers_base::op_ssg_eg_enable(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:132:44: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  132 |         uint32_t op_ssg_eg_enable(uint32_t opoffs) const { return 0; } // OPN(A) only
+      |                                   ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm_fm.h: In member function ‘uint32_t ymfm::fm_registers_base::op_ssg_eg_mode(uint32_t) const’:
+/tmp/sil6/SILICON/src/ymfm_fm.h:133:42: warning: unused parameter ‘opoffs’ [-Wunused-parameter]
+  133 |         uint32_t op_ssg_eg_mode(uint32_t opoffs) const   { return 0; } // OPN(A) only
+      |                                 ~~~~~~~~~^~~~~~
+In file included from /tmp/sil6/SILICON/src/ymfm_ssg.h:36,
+                 from /tmp/sil6/SILICON/src/ymfm_ssg.cpp:31:
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_timer(uint32_t, int32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:527:46: warning: unused parameter ‘tnum’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                     ~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:527:60: warning: unused parameter ‘duration_in_clocks’ [-Wunused-parameter]
+  527 |         virtual void ymfm_set_timer(uint32_t tnum, int32_t duration_in_clocks) { }
+      |                                                    ~~~~~~~~^~~~~~~~~~~~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_set_busy_end(uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:533:49: warning: unused parameter ‘clocks’ [-Wunused-parameter]
+  533 |         virtual void ymfm_set_busy_end(uint32_t clocks) { }
+      |                                        ~~~~~~~~~^~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_update_irq(bool)’:
+/tmp/sil6/SILICON/src/ymfm.h:548:43: warning: unused parameter ‘asserted’ [-Wunused-parameter]
+  548 |         virtual void ymfm_update_irq(bool asserted) { }
+      |                                      ~~~~~^~~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual uint8_t ymfm::ymfm_interface::ymfm_external_read(ymfm::access_class, uint32_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:552:57: warning: unused parameter ‘type’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                            ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:552:72: warning: unused parameter ‘address’ [-Wunused-parameter]
+  552 |         virtual uint8_t ymfm_external_read(access_class type, uint32_t address) { return 0; }
+      |                                                               ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h: In member function ‘virtual void ymfm::ymfm_interface::ymfm_external_write(ymfm::access_class, uint32_t, uint8_t)’:
+/tmp/sil6/SILICON/src/ymfm.h:556:55: warning: unused parameter ‘type’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                          ~~~~~~~~~~~~~^~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:70: warning: unused parameter ‘address’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                             ~~~~~~~~~^~~~~~~
+/tmp/sil6/SILICON/src/ymfm.h:556:87: warning: unused parameter ‘data’ [-Wunused-parameter]
+  556 |         virtual void ymfm_external_write(access_class type, uint32_t address, uint8_t data) { }
+      |                                                                               ~~~~~~~~^~~~
+  [native] ok (348 KB, 13.5s)
+
+[2/2] Parameter dump (host_sim) -> build/params.json
+  building host_sim (first use) -> /tmp/sil6/sdk/.sdk-tools/host_sim
+  host_sim dump -> build/params.json
+
+Native build only: /tmp/sil6/SILICON/build/native/silicon.so
+Try it:  /tmp/sil6/sdk/.sdk-tools/host_sim /tmp/sil6/SILICON/build/native/silicon.so test --notes 60,64,67 --wav out.wav

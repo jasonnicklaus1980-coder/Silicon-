@@ -1,0 +1,2 @@
+gen_ui: wrote skins/TUI.json and skins/Q-Links.json (3 pages, 20 bound controls, layout from ui.json, kit cyan)
+gen_ui: NOTE: drawn bipolar (centre-zero) by auto-detection: "Bass EQ", "Treble EQ". Set "polarity" to override.

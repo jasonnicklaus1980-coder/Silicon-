@@ -1,0 +1,201 @@
+{
+  "kit": "cyan",
+  "qlinkGroups": "rows",
+  "pages": [
+    {
+      "name": "CHIPS",
+      "controls": [
+        {
+          "param": "Engine",
+          "widget": "switch"
+        },
+        {
+          "param": "Layer Engine",
+          "widget": "switch"
+        },
+        {
+          "param": "Layer Mix",
+          "widget": "fader"
+        },
+        {
+          "param": "Volume",
+          "widget": "fader"
+        },
+        {
+          "param": "Tone",
+          "widget": "switch"
+        },
+        {
+          "param": "Layer Tone",
+          "widget": "switch"
+        },
+        {
+          "param": "Brightness",
+          "widget": "knob"
+        },
+        {
+          "param": "FX Mode",
+          "widget": "switch"
+        }
+      ],
+      "background": "silicon-chips.png"
+    },
+    {
+      "name": "LAYERS",
+      "background": "silicon-layers.png",
+      "controls": [
+        {
+          "param": "Layer 3 Engine",
+          "widget": "switch"
+        },
+        {
+          "param": "Layer 3 Tone",
+          "widget": "switch"
+        },
+        {
+          "param": "Layer 3 Mix",
+          "widget": "fader"
+        },
+        {
+          "widget": "empty"
+        },
+        {
+          "param": "Layer 4 Engine",
+          "widget": "switch"
+        },
+        {
+          "param": "Layer 4 Tone",
+          "widget": "switch"
+        },
+        {
+          "param": "Layer 4 Mix",
+          "widget": "fader"
+        }
+      ]
+    },
+    {
+      "name": "FX",
+      "controls": [
+        {
+          "param": "Drive",
+          "widget": "knob"
+        },
+        {
+          "param": "Echo",
+          "widget": "knob"
+        },
+        {
+          "param": "Chorus",
+          "widget": "knob"
+        },
+        {
+          "param": "Reverb",
+          "widget": "knob"
+        },
+        {
+          "param": "Phaser",
+          "widget": "knob"
+        },
+        {
+          "param": "Flanger",
+          "widget": "knob"
+        },
+        {
+          "param": "FX Mode",
+          "widget": "switch"
+        }
+      ],
+      "background": "silicon-fx.png"
+    },
+    {
+      "name": "COLOR",
+      "controls": [
+        {
+          "param": "Bass EQ",
+          "widget": "knob"
+        },
+        {
+          "param": "Treble EQ",
+          "widget": "knob"
+        },
+        {
+          "param": "Compressor",
+          "widget": "knob"
+        },
+        {
+          "param": "Bit Crusher",
+          "widget": "knob"
+        },
+        {
+          "param": "FX Mode",
+          "widget": "switch"
+        }
+      ],
+      "background": "silicon-color.png"
+    },
+    {
+      "name": "TUNE",
+      "background": "silicon-layers.png",
+      "controls": [
+        {
+          "param": "Layer 1 Detune",
+          "widget": "knob"
+        },
+        {
+          "param": "Layer 2 Detune",
+          "widget": "knob"
+        },
+        {
+          "param": "Layer 3 Detune",
+          "widget": "knob"
+        },
+        {
+          "param": "Layer 4 Detune",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "OPERATOR",
+      "background": "silicon-operator.png",
+      "controls": [
+        {
+          "param": "Edit Layer",
+          "widget": "knob",
+          "overlay": "menu"
+        },
+        {
+          "param": "Operator",
+          "widget": "knob"
+        },
+        {
+          "param": "Operator Ratio",
+          "widget": "knob"
+        },
+        {
+          "param": "Operator Attenuation",
+          "widget": "knob"
+        },
+        {
+          "param": "Operator Attack",
+          "widget": "knob"
+        },
+        {
+          "param": "Operator Decay",
+          "widget": "knob"
+        },
+        {
+          "param": "Operator Sustain Attenuation",
+          "widget": "knob"
+        },
+        {
+          "param": "Operator Release",
+          "widget": "knob"
+        }
+      ]
+    }
+  ],
+  "style": {
+    "background": "ff17191b"
+  }
+}

@@ -1,0 +1,2 @@
+gen_ui: wrote /tmp/sil7-ui/TUI.json and /tmp/sil7-ui/Q-Links.json (6 pages, 38 bound controls, layout from ui.json, kit cyan)
+gen_ui: NOTE: drawn bipolar (centre-zero) by auto-detection: "Bass EQ", "Treble EQ", "Layer 1 Detune", "Layer 2 Detune", "Layer 3 Detune", "Layer 4 Detune". Set "polarity" to override.

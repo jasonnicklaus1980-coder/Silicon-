@@ -1,0 +1,17 @@
+OK     TUI.json: Q-Link group rectangles enclose their controls evenly
+OK     TUI.json: all parameter handles are within 0..35
+OK     TUI.json: image fader_h_uni.png present
+OK     TUI.json: image knob_bi.png present
+OK     TUI.json: image knob_uni.png present
+OK     TUI.json: image seg2_off.png present
+OK     TUI.json: image seg2_on.png present
+OK     TUI.json: image seg4_off.png present
+OK     TUI.json: image seg4_on.png present
+OK     TUI.json: image silicon-chips.png present
+OK     TUI.json: image silicon-color.png present
+OK     TUI.json: image silicon-fx.png present
+OK     TUI.json: image silicon-layers.png present
+OK     TUI.json: image silicon-operator.png present
+OK     TUI.json: 6 tabs
+OK     Q-Links.json: 6 tab maps, all values in range
+{'errors': 0, 'warnings': 0}

@@ -1,0 +1,13 @@
+{
+  "name": "SILICON",
+  "manufacturer": "Shannon Instruments",
+  "version": "1.0.0",
+  "format": "vst2",
+  "kind": "instrument",
+  "uid": "SiL1",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "category": "Synth",
+  "file32": "VST/silicon-arm32.so",
+  "description": "Four Yamaha FM engines with four selectable layers"
+}

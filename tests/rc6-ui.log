@@ -1,0 +1,2 @@
+gen_ui: ERROR in ui.json pages[5].controls[1]: "switch" needs a bool or choice parameter; "Operator" is kind "int".
+  Use "knob" or "fader" for continuous parameters, or make the parameter a choiceParam()/boolParam() in the code.
